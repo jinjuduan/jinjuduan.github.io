@@ -42,8 +42,12 @@ body {
 
 .section-items p::before {
   display: inline-block;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
   content: '•';
-  padding-right: 6px;
+  padding-right: 5px;
+}
+@media (max-width: 768px) {
+  .section-items p::before {
+    padding-right: 3px;
+  }
 }
